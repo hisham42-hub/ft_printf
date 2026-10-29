@@ -3,7 +3,11 @@ CC= gcc
 CFLAGS= -Wall -Wextra -Werror
 AR= ar
 ARFLAGS= rcs
-SRCS= 
+SRCS= ft_printf.c \
+	$(wildcard converter/*.c) \
+	$(wildcard char/*.c) \
+	$(wildcard int/*.c) \
+	$(wildcard pointer/*.c) \
 OBJS= $(SRCS:.c=.o)
 
 all: $(NAME)
