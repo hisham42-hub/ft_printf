@@ -8,10 +8,10 @@ int	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	count = 0;
 	if (!s)
-		return ;
+		s = "(null)";
 	while (s[i])
 	{
-		count += ft_putchar_fd(s[i], fd);
+		count += ft_print_char(s[i], fd);
 		i++;
 	}
 	return (count);
